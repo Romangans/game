@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="game.css">
   <title>Поставьте зачёт пожалуйста</title>
   <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
   <script src="p5/p5.min.js"></script>
@@ -11,27 +12,43 @@
   <script src="js/game.js"></script>
 </head>
 
+
 <body>
-  <p> Score:
-    <span id="score">0</span>
-  </p>
 
-  <div id="sketch-holder"></div>
+  <header>
+    <div class="headleft">
+      <a class="logo" href="index.html"><img src="img/logo.svg" alt="logo" class="logo-img" width="50px"
+          height="50px"></a>
+      <a href="index.html#rules" class="rules-link">как играть</a>
+    </div>
+    <a href="game.html" class="game-link">играть</a>
+  </header>
 
-  <div style="margin: 5px;">
-    <label for="board-size">Board Size</label>
-    <input id="board-size" type="range" min="3" max="10" step="1" value="4" />
-  </div>
+  <main>
+    <section class="game">
+      <p> Score:
+        <span id="score">0</span>
+      </p>
 
-  <div style="margin: 5px;">
-    <label for="value-1">Initial Value 1</label>
-    <input id="value-1" type="number" value="2" />
-  </div>
+      <div id="sketch-holder"></div>
 
-  <div style="margin: 5px;">
-    <label for="value-2">Initial Value 2</label>
-    <input id="value-2" type="number" value="4" />
-  </div>
+      <div>
+        <label for="board-size">Board Size</label>
+        <input id="board-size" type="range" min="3" max="10" step="1" value="4" />
+      </div>
+
+      <div>
+        <label for="value-1">Initial Value 1</label>
+        <input id="value-1" type="number" value="2" />
+      </div>
+
+      <div>
+        <label for="value-2">Initial Value 2</label>
+        <input id="value-2" type="number" value="4" />
+      </div>
+    </section>
+  </main>
+
 </body>
 
 </html>
