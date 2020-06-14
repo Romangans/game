@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Поставьте зачёт пожалуйста</title>
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <script src="p5/p5.min.js"></script>
+  <script src="p5/p5.dom.min.js"></script>
+  <script src="js/sketch.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/game.js"></script>
+</head>
+
+<body>
+  <p> Score:
+    <span id="score">0</span>
+  </p>
+
+  <div id="sketch-holder"></div>
+
+  <div style="margin: 5px;">
+    <label for="board-size">Board Size</label>
+    <input id="board-size" type="range" min="3" max="10" step="1" value="4" />
+  </div>
+
+  <div style="margin: 5px;">
+    <label for="value-1">Initial Value 1</label>
+    <input id="value-1" type="number" value="2" />
+  </div>
+
+  <div style="margin: 5px;">
+    <label for="value-2">Initial Value 2</label>
+    <input id="value-2" type="number" value="4" />
+  </div>
+</body>
+
+</html>
